@@ -1,0 +1,5 @@
+body { font-family: system-ui, sans-serif; margin: 2rem; }
+.row { display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:1rem; }
+button { padding: .6rem 1rem; border-radius: .6rem; border:1px solid #ccc; cursor:pointer; }
+#log { white-space: pre-wrap; background:#111; color:#eee; padding:1rem; border-radius:.6rem; min-height:8rem; }
+.tag { padding:.2rem .5rem; border-radius:.4rem; background:#eef; margin-right:.4rem; display:inline-block }

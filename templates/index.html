@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Patrones Creacionales — Mini Juego</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+<body>
+  <h1>Mini Juego en Flask — Patrones Creacionales</h1>
+  <p>
+    Selecciona el <strong>tema</strong>, construye el <strong>nivel</strong>, y crea enemigos con
+    <em>Factory Method</em> usando prototipos y un <em>Builder</em>.
+  </p>
+
+  <div class="row">
+    <button onclick="setTheme('fantasy')">Tema: Fantasy</button>
+    <button onclick="setTheme('scifi')">Tema: Sci‑Fi</button>
+    <button onclick="resetGame()">Reiniciar</button>
+  </div>
+
+  <div class="row">
+    <button onclick="buildLevel()">Construir Nivel</button>
+    <button onclick="spawn('orc')">Crear Orc</button>
+    <button onclick="spawn('dragon')">Crear Dragon</button>
+    <button onclick="spawn('goblin')">Crear Goblin</button>
+    <button onclick="spawn('drone')">Crear Drone</button>
+    <button onclick="spawn('android')">Crear Android</button>
+    <button onclick="spawn('alien')">Crear Alien</button>
+  </div>
+
+  <h3>Estado de juego</h3>
+  <div id="state"></div>
+
+  <h3>Log</h3>
+  <div id="log"></div>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
